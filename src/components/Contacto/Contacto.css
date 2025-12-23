@@ -1,0 +1,232 @@
+
+.contenido-contacto{
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.datos-contacto {
+    width: 45%;
+}
+
+.item-dato{
+    background-color: var(--color-light);
+    padding: 18px 16px;
+    width: 390px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+.item-dato a{ 
+    padding-left: 5px;
+    color: var(--color-primary) !important;;
+}
+
+.icon-dato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-dato{
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.form-contacto{
+    max-width: 480px;
+    width: 100%;
+    padding: 0 10px;
+/*
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    border-radius: 8px;
+    padding: 0 25px;
+}
+
+.input-box{
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-contacto{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box; 
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.input-contacto:focus {
+    border-color: var(--color-primary); /* Borde con foco */
+    outline: none;
+}
+
+.input-contacto.messaje{
+    height: 80px;
+    resize: none;
+}
+
+.btn-contacto{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto ;
+}
+
+.btn-contacto:hover{
+    background-color: var(--color-tertiary);
+}
+
+@media (max-width: 1024px) {
+    .contenido-contacto {
+        flex-direction: column; /* Los elementos se apilan en columnas */
+        align-items: center; /* Centrar los elementos */
+        gap: 30px; /* Reducir espacio entre los elementos */
+    }
+
+    .datos-contacto, .form-contacto {
+        width: 100%; /* Hacer los contenedores de datos y el formulario de ancho completo */
+        max-width: 600px; /* Limitar el ancho máximo */
+    }
+
+    .item-dato {
+        width: 100%; /* Asegura que los elementos de contacto ocupen todo el ancho disponible */
+        font-size: 14px; /* Reducir tamaño de texto para pantallas más pequeñas */
+    }
+
+    .input-contacto {
+        height: 35px; /* Reducir la altura de los campos de entrada */
+        font-size: 14px; /* Reducir tamaño de texto en los inputs */
+    }
+
+    .input-contacto.messaje {
+        height: 100px; /* Ampliar la altura del campo de mensaje */
+    }
+
+    .btn-contacto {
+        width: 180px; /* Reducir el tamaño del botón */
+        font-size: 16px; /* Reducir tamaño de fuente en el botón */
+    }
+
+    .subtitulo {
+        font-size: 14px; /* Reducir el tamaño del subtítulo */
+        text-align: center; /* Centrar el subtítulo */
+        width: 80%; /* Asegura que el subtítulo no ocupe demasiado espacio */
+        margin: 0 auto; /* Centrar el subtítulo */
+    }
+}
+
+@media (max-width: 768px) {
+    .contenido-contacto {
+        flex-direction: column; /* Los elementos se apilan en columna */
+        padding: 20px; /* Reducir padding */
+    }
+
+    .datos-contacto, .form-contacto {
+        width: 100%; /* Hacer que los elementos de contacto y formulario ocupen todo el ancho */
+        padding: 0 15px; /* Ajustar el padding */
+    }
+
+    .item-dato {
+        width: 100%; /* Asegura que los ítems ocupen todo el espacio */
+        font-size: 14px; /* Reducir tamaño de fuente */
+        padding: 15px;
+        text-align: left;
+    }
+
+    .input-contacto {
+        height: 35px; /* Ajustar altura de los inputs */
+        font-size: 14px; /* Ajustar tamaño de texto */
+    }
+
+    .input-contacto.messaje {
+        height: 120px; /* Ajustar tamaño del campo de mensaje */
+    }
+
+    .btn-contacto {
+        width: 100%; /* Hacer el botón de contacto de ancho completo */
+        font-size: 16px; /* Reducir tamaño de fuente en el botón */
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* Ajustar el contenedor de la sección de contacto */
+    .contenido-contacto {
+        margin: 20px 10px;  /* Reducir márgenes */
+        padding: 0;  /* Eliminar el padding extra */
+        display: block;  /* Cambiar a bloque para mejor distribución */
+    }
+
+    /* Datos de contacto (los íconos) */
+    .datos-contacto {
+        width: 100%;  /* Hacer que los datos de contacto ocupen el 100% */
+        margin-bottom: 30px; /* Separación entre los datos de contacto y el formulario */
+    }
+
+    .item-dato {
+        width: 100%; /* Asegurar que cada ítem ocupe todo el espacio disponible */
+        padding: 15px; /* Reducir el padding */
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+        margin-bottom: 15px; /* Reducir el espacio entre los ítems */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .item-dato svg {
+        width: 18px; /* Reducir tamaño de los íconos */
+        height: 18px;
+    }
+
+    /* Ajustar el formulario */
+    .form-contacto {
+        width: 100%; /* Hacer que el formulario ocupe el 100% */
+        padding: 20px; /* Añadir padding */
+    }
+
+    .input-box {
+        margin-bottom: 15px; /* Reducir margen entre los inputs */
+    }
+
+    .input-contacto {
+        width: 100%; /* Asegurarse de que los inputs ocupen todo el ancho */
+        height: 40px;
+        font-size: 14px; /* Reducir tamaño de fuente */
+        padding: 10px;
+        margin-top: 8px;
+    }
+
+    .input-contacto.messaje {
+        height: 80px;  /* Ajustar el alto del textarea */
+    }
+
+    .btn-contacto {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+        height: 45px; /* Ajustar el alto del botón */
+        font-size: 16px; /* Reducir el tamaño del texto */
+        margin-top: 20px; /* Añadir espacio arriba */
+    }
+}

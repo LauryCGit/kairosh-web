@@ -1,0 +1,42 @@
+.carousel-empresas {
+    margin-top: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background: white;
+}
+
+.logos-track {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  width: 180px; 
+  margin: 0 30px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
+
+.logo-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Animación */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

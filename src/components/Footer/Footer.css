@@ -1,0 +1,111 @@
+.fondo-footer{
+    background-color: var(--color-tertiary);
+    color: white;
+    height: auto;
+    padding: 40px 150px;
+    
+}
+
+.contenido-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.nombre-empresa{
+    font-family: var(--font-titulo);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(30, 30, 30, 0.5); /* Sombra para resaltar */
+    letter-spacing: 3px;
+}
+
+.descripcion-empresa{
+    font-family: var(--font-titulo);
+    font-size: 16px;
+    color: var(--color-light);
+    text-shadow: 2px 2px 10px rgba(30, 30, 30, 0.5); 
+}
+
+.dato-telefono,
+.dato-email,
+.dato-direccion{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.telefono,
+.email,
+.direccion{
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.copy, .politica-privacidad{
+    font-size: 14px;
+    color: #BDC3C7;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.politica-privacidad a{
+    text-decoration: none;
+    color: #BDC3C7;
+}
+
+@media (max-width: 768px) {
+    .fondo-footer {
+        padding: 20px 30px; /* Ajuste para pantallas pequeñas */
+    }
+    .contenido-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nombre-empresa {
+        font-size: 40px;
+    }
+
+    .descripcion-empresa {
+        font-size: 14px;
+        padding-bottom:  15px;
+    }
+
+    .datos-empresa, .datos-contacto {
+        width: 100%;
+        text-align: center;
+    }
+    .dato-telefono, .dato-email, .dato-direccion {
+        justify-content: center; /* Centra los datos de contacto en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    .telefono, .email, .direccion {
+        font-size: 14px;
+        padding-right: 10px; /* Elimina el padding extra en pantallas pequeñas */
+    }
+}
+
+/***/
+
+.titulo-politica{
+    font-family: var(--font-subtitlo);
+    text-transform: uppercase;
+    color: var(--color-tertiary);
+    font-weight: 700;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.politica p{
+    font-size: 15px;
+    font-family: var(--font-text);
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.sub-politica{
+    font-weight: 700;
+    padding-bottom: 0px;
+}

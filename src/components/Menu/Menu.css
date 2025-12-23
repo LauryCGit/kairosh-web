@@ -1,0 +1,100 @@
+.logo{
+    width: 55px;
+}
+.img-logo{
+    width: 100%;
+    
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#menu-toggle {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-light);
+}
+
+#menu-toggle:focus, #menu-toggle:hover {
+    color: var(--color-light);; /* Cambiar color del icono al pasar el mouse */
+}
+
+
+.enlaces-menu .nav-link{
+    font-family: var(--font-titulo) !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;      
+}
+
+.enlaces-menu .nav-link:hover {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.enlaces-menu .enlace{
+    color: white;
+    text-decoration: none; 
+    margin: 0 5px;   
+}
+
+.enlaces-menu .active {
+    color: var(--color-primary) !important;
+    font-weight: bold;
+    background-color: var(--color-light);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2px 0;
+        background-color: rgba(2, 76, 170, 0.8);
+   
+        z-index: 1000; 
+    }
+    .contenedor-nav {
+        margin-top: 60px; /* Ajusta la distancia si es necesario */
+    }
+    .container-header {
+        padding: 30px 30px;
+    }
+
+    .titulo-nombre {
+        font-size: 50px;
+    }
+
+    .subtitulo-descripcion {
+        font-size: 18px;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(var(--color-primary), 0.5);
+       
+        margin-top: 8px;
+    }
+
+    .navbar-toggler {
+        border-color: var(--color-light); 
+    }
+
+    .enlaces-menu {
+        flex-direction: column; 
+        align-items: flex-start; 
+        width: 100%;
+        
+    }
+
+    .enlaces-menu .nav-link {
+        font-size: 18px; /* Aumentar el tamaño de fuente en dispositivos móviles */
+        padding: 8px 5px; /* Añadir más espacio alrededor de cada enlace */
+        width: 95%; /* Los enlaces ocupan todo el ancho */
+        text-align: left;
+    }
+
+}
