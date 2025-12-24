@@ -7,7 +7,7 @@ import Empresas from '../../components/Empresas/Empresas';
 import './Home.css';
 import Chat from './Chat';
 
-import foto1 from '../../assets/foto1.JPG';
+import foto1 from '../../assets/foto1.jpg';
 import foto2 from '../../assets/foto2.jpg';
 import foto3 from '../../assets/foto3.jpg';
 import foto4 from '../../assets/foto4.jpg';
