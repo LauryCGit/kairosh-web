@@ -19,7 +19,8 @@ const Equipo = () => {
                             rel="noopener noreferrer"
                             className="linkedin-icon">
                             <FaLinkedin />
-                            Ver Perfil
+                            <span className='btn-texto'>Ver Perfil</span>
+                                                   
                         </a>
                     </button>
                 </div>
@@ -27,15 +28,16 @@ const Equipo = () => {
                     
                     <p className="nombre-staff">Tec. Karina Vásquez</p>
                     <p>Tecnica en Seguridad e Higiene</p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/patricia-hernandez-38b42765/"
+                    <button className='btn-linkedin'>
+                        <a href="https://www.linkedin.com/in/karina-vasquez-15b52a158/"
                         target="_blank"
                             rel="noopener noreferrer"
                             className="linkedin-icon">
                                 <FaLinkedin />
-                                Ver Perfil
+                                <span className='btn-texto'>Ver Perfil</span>
+                               
                         </a>
-                    </p>
+                    </button>
                 </div>
                 <div className="staff-item">
                     

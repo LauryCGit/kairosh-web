@@ -28,20 +28,40 @@
 }
 
 .btn-linkedin{
-    margin: 1rem auto 0;
+    margin: 1.4rem auto 0;
     display: flex;
     align-items: center;
-    padding: 10px 22px;
+    padding: 8px 20px;
     border-radius: 5px;
-    border: none;
     background: transparent;
-    color: var(--color-primary);
     font-weight: 500;
     text-decoration: none;
     transition: all 0.25s ease;
+    border: 1px solid  var(--color-primary);
 }
 
 .btn-linkedin:hover {
-  border: 1px solid  var(--color-primary);
-  color: white;
+    border: 1px solid  var(--color-secondary);
+    background-color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.linkedin-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--color-primary); /* Color base */
+    transition: color 0.25s ease;
+}
+
+
+.btn-linkedin:hover .linkedin-icon,
+.btn-linkedin:hover .btn-texto {
+    color: white; 
+}
+
+.btn-texto{
+    margin: 0;    
 }
