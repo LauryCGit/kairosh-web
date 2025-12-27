@@ -40,7 +40,6 @@
 
 .servicio-detalle{
     margin-bottom: 2rem;
-    
 }
 
 .header-servicio{
@@ -88,7 +87,7 @@
     border-radius: 5px;
     text-transform: uppercase;
     border: none;
-    padding: 5px 25px;
+    padding: 8px 25px;
     font-weight: 600;
     margin-top: 1rem;
     cursor: pointer;
@@ -112,7 +111,17 @@
     
 }
 
-@media (max-width: 466px) {
+@media (max-width: 480px) {
+
+    .todos-servicios{
+        padding: 2rem;
+    }
+    .titulo-seccion-servicios{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+
     .titulo-servicio{
         font-size: 16px;
     }
@@ -123,5 +132,15 @@
     }
     .texto-servicio{
         font-size: 13px;
+    }
+
+    .texto-servicio li::before {
+        left: 0;
+        top: 0.1rem;
+    }
+
+    .btn-asesoramiento{
+        display: block;
+        margin: 0 auto;
     }
 }
