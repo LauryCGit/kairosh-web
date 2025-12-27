@@ -16,7 +16,6 @@
     color: var(--color-light);; /* Cambiar color del icono al pasar el mouse */
 }
 
-
 .enlaces-menu .nav-link{
     font-family: var(--font-titulo) !important;
     font-size: 18px;
@@ -47,6 +46,15 @@
     border-radius: 5px;
 }
 
+.logo-mobile {
+  display: none;
+}
+
+.logo-mobile-img{
+    height: 40px;
+    width: auto;
+}
+
 @media (max-width: 768px) {
     #nav-menu {
         position: fixed;
@@ -59,18 +67,7 @@
         z-index: 1000; 
     }
     .contenedor-nav {
-        margin-top: 60px; /* Ajusta la distancia si es necesario */
-    }
-    .container-header {
-        padding: 30px 30px;
-    }
-
-    .titulo-nombre {
-        font-size: 50px;
-    }
-
-    .subtitulo-descripcion {
-        font-size: 18px;
+        margin-top: 60px;
     }
 
     .navbar-collapse {
@@ -96,5 +93,31 @@
         width: 95%; /* Los enlaces ocupan todo el ancho */
         text-align: left;
     }
+
+}
+
+@media (max-width: 480px) {
+    #basic-navbar-nav {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contenedor-nav {
+        margin-top: 40px;
+    }
+
+    .logo-mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar > .container {
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    margin-left: auto;
+  }
 
 }

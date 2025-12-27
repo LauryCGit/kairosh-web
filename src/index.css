@@ -24,6 +24,11 @@
   font-family: var(--font-text);
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 p{
   margin: 0 !important;
 }

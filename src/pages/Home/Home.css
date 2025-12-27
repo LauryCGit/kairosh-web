@@ -1,45 +1,12 @@
-.icon-wpp{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 30px;
-}
-
-.iconw{
-    width: 100%;
-}
-
-.tooltip {
-    visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.icon-wpp a:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-
 .widget{
   position: fixed;
   bottom: 20px;
   right: 20px;
   align-content: end;
+   z-index: 9999;
 }
   
-  .whatsapp-button {
+.whatsapp-button {
     background-color: #19c357;
     color: white;
     border: none;
@@ -51,7 +18,7 @@
     align-items: center;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  }
+}
   
   .whatsapp-icon {
     font-size: 40px;
@@ -97,3 +64,28 @@
   .start-chat:hover {
     background-color: #1ebe5d;
   }
+
+
+@media (max-width: 480px) {
+
+    
+  .widget {
+    bottom: 35px;
+    right: 25px;
+  }
+
+  .whatsapp-button {
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-icon {
+    font-size: 32px;
+  }
+
+  .whatsapp-chat {
+    width: calc(100vw - 30px);
+    right: 0;
+    bottom: 70px;
+  }
+}

@@ -18,6 +18,8 @@
 .tarjeta-servicio {
   border: 2px solid var(--color-secondary);
   width: 355px;
+  min-height: 330px;
+  max-height: 420px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -129,4 +131,12 @@
         margin-top: 10px;
     }
 
+}
+
+@media (max-width: 480px) {
+    .tarjeta-servicio {
+        min-height: 310px;
+       
+    }
+   
 }

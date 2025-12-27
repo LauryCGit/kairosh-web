@@ -2,7 +2,7 @@ import './AcercaDe.css';
 
 import foto from '../../assets/cascos.png';
 import carta from '../../assets/icons/letter.png';
-
+import pdfcarta from '../../assets/CARTA DE KAIROSH 2026.pdf'
 
 const AcercaDe = () => {
     return (
@@ -22,7 +22,16 @@ const AcercaDe = () => {
                     <p>Nos enfocamos en <strong>prosperar la seguridad integral en los ámbitos laborales</strong>; dedicados a la disciplina higienista principalmente en la práctica de evaluaciones de los puestos laborales bajo contaminantes y medida del confort ambiental; asimismo, elaboramos matrices de riesgos e impactos ambientales, y todo tipo de estudio requerido en el marco legal aplicable y normativa internacional vigente en materia <strong>Salud Seguridad y Ambiente.</strong></p>
                     <div className="carta-presentacion">
                         <img className='carta' src={carta} alt="" />
-                        <p><strong> KAIROSH </strong>- Carta de Presentación</p>
+                        <p>
+                            <strong> KAIROSH </strong>
+                            <a
+                                href={pdfcarta}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                            - Ver Carta de Presentación
+                            </a>                     
+                        </p>
                     </div>
                     
                 </div>       

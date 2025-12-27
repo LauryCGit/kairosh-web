@@ -4,6 +4,8 @@ import { Container, Navbar, Nav} from 'react-bootstrap';
 
 import { Link as ScrollLink } from 'react-scroll'; 
 import { Link as RouterLink, useLocation } from "react-router-dom";
+import logo_k from '../../assets/logos/K-LogoB.png';
+
 
 const Menu = () => {
 
@@ -15,8 +17,15 @@ const Menu = () => {
       <div className='contenedor-nav'>
         <Navbar expand="lg"  id='nav-menu'>
           <Container>
+            <Navbar.Brand className="logo-mobile">
+              <img className='logo-mobile-img' src={logo_k} alt="Kairosh" />
+            </Navbar.Brand>
             
-            <Navbar.Toggle id='menu-toggle' aria-controls="basic-navbar-nav"/>
+            <Navbar.Toggle 
+              id='menu-toggle' 
+              aria-controls="basic-navbar-nav"
+              className="ms-auto"
+            />
             <Navbar.Collapse id="basic-navbar-nav" 
             className="basic-navbar-nav justify-content-end">
               <Nav className='enlaces-menu'>

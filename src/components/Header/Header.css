@@ -2,8 +2,9 @@
     height: 280px;
     padding: 25px 150px;
     background-image: url("../../assets/FondoHeader.png");
-    background-size: cover; /* Hace que el fondo cubra todo el contenedor */
+    background-size: cover; 
     background-position: center;
+     position: relative;
 }
 .logos{
     display: flex;
@@ -15,16 +16,6 @@
 }
 .logoblanco{
     height: 90px;
-}
-
-.titulo-nombre{
-    font-size: 70px;
-    font-family: var(--font-titulo);
-    color: white;
-    text-transform: uppercase;
-    margin: 0;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
-    letter-spacing: 3px;
 }
 
 .subtitulo-descripcion{
@@ -60,12 +51,34 @@
 }
 
 @media (max-width: 480px) {
-    .logoblanco{
-        height: 75px;
-    }
-
-    .container-header{
-        padding: 20px 30px;
     
-    }
+  .container-header {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .logoK {
+    display: none;
+  }
+
+  .logos {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logoblanco {
+    height: 70px;
+  }
+
+  .subtitulo-descripcion {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .menu-header {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
 }

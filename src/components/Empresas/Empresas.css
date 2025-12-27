@@ -10,12 +10,17 @@
   display: flex;
   width: calc(200%);
   animation: scroll 20s linear infinite;
+  height: 150px;
 }
 
 .logo-item {
   flex: 0 0 auto;
-  width: 180px; 
+  width: 180px;
+  height: 140px;   
   margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.8;
   transition: opacity 0.3s ease;
   
@@ -26,12 +31,17 @@
 }
 
 .logo-item img {
-  width: 100%;
-  height: auto;
+  max-height: 100%;
+  max-width: 100%;
   object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
 }
 
-/* Animación */
+.logo-item:hover img {
+  filter: grayscale(0%);
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -39,4 +49,28 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+@media (max-width: 480px) {
+
+  .carousel-empresas {
+    padding: 10px 0;
+  }
+
+  .logos-track {
+    height: 100px;
+    animation-duration: 15s;
+  }
+
+  .logo-item {
+    width: 120px;
+    height: 90px;
+    margin: 0 5px;
+
+  }
+
+  .logo-item img {
+    max-height: 90px;
+    max-width: 110px;
+  }  
 }

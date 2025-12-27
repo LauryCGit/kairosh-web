@@ -15,7 +15,6 @@ export default function Servicios() {
     {
         titulo: "Higiene",
         icono: higiene,
-        height: "390px",
         items: [
         "Ergonomía",
         "Ventilación",
@@ -29,7 +28,6 @@ export default function Servicios() {
     {
         titulo: "Seguridad",
         icono: seguridad,
-        height: "420px",
         items: [
         "Programas de seguridad",
         "Planes de capacitación",
@@ -46,7 +44,6 @@ export default function Servicios() {
     {
         titulo: "Ambiente",
         icono: ambiente,
-        height: "390px",
         items: [
         "Gestión de residuos",
         "Representante Técnico Ambiental en Provincia",
@@ -60,7 +57,6 @@ export default function Servicios() {
     {
         titulo: "Gestión",
         icono: gestion,
-        height: "330px",
         items: [
         "Asesoramiento en la implementación de Sistemas de Gestión",
         "Evaluación de Riegos",
@@ -70,7 +66,6 @@ export default function Servicios() {
     {
         titulo: "Especiales",
         icono: especiales,
-        height: "330px",
         items: [
         "Servicio en Obras",
         "Mineria Roster 14*14",

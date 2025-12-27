@@ -65,3 +65,22 @@
 .btn-texto{
     margin: 0;    
 }
+
+@media (max-width: 468px) {
+    .staff{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 13px;
+        margin-top: 2.5rem;
+    }
+
+    .staff-item{
+       width: 100%;
+        max-width: 320px;
+    }
+
+    .subtitulo-secundario{
+        font-size: 14px;
+    }
+}

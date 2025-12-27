@@ -52,6 +52,10 @@ const Contacto = () => {
                             <a href="https://api.whatsapp.com/send?phone=5492975903377&text=Hola,%20quisiera%20más%20información." target="_blank" rel="noopener noreferrer">
                             297 5903377
                             </a>
+                            <span> - </span>
+                            <a target="_blank" rel="noopener noreferrer">
+                            297 4721936
+                            </a>
                         </div>                       
                     </div>
                     <div className='item-dato'>

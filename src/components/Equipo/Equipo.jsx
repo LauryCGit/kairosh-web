@@ -5,7 +5,7 @@ const Equipo = () => {
     return ( 
     
         <div id='equipo' className='seccion'>
-            <div>
+            <div translate="no">
                 <p className="titulo-secundario">Nuestro Equipo</p>
                 <p className="subtitulo-secundario">Profesionales detras de Kairosh</p>
             </div>

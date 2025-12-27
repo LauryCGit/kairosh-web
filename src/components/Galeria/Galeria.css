@@ -67,3 +67,31 @@
   background: var(--color-primary);
   color: white;
 }
+
+
+@media (max-width: 480px) {
+
+  .carousel-container {
+    margin: 20px 0;
+  }
+
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .center-img {
+    width: 90vw;
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .nav-button {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+}
